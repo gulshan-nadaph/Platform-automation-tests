@@ -1,0 +1,54 @@
+class WebSocketClient {
+    constructor(host, port, apiKey) {
+        this.host = host;
+        this.port = port;
+        this.apiKey = apiKey;
+        this.nextId = 0;
+        this.connected = false;
+        this.authenticating = false;
+        this.socket = new WebSocket(`wss://${this.host}:${this.port}/`);
+        this.init();
+    }
+
+    init() {
+        this.socket.onopen = this.onOpen.bind(this);
+        this.socket.onclose = this.onClose.bind(this);
+        this.socket.onmessage = this.onMessage.bind(this);
+    }
+
+    onOpen(event) {
+        console.log(`Socket opened with ${this.host}:${this.port}`);
+        this.authenticating = true;
+        this.sendRequest("authenticate", { "code": this.apiKey }, (result) => {
+            console.log("Authentication successful");
+            this.nextId = result.nextId;
+            this.connected = true;
+            this.authenticating = false;
+        });
+    }
+
+    onClose() {
+        console.log("Socket closed");
+        this.connected = this.authenticating = false;
+        this.socket = undefined;
+        this.nextId = 0;
+    }
+
+    onMessage(event) {
+        let data = JSON.parse(event.data);
+        console.log('Received message:', data);
+    }
+
+    sendRequest(method, params, callback) {
+        let id = this.nextId++;
+        let request = { id, method, params };
+        this.socket.send(JSON.stringify(request));
+        this.socket.addEventListener('message', function listener(event) {
+            let response = JSON.parse(event.data);
+            if (response.id === id) {
+                this.socket.removeEventListener('message', listener);
+                callback(response.result);
+            }
+        }.bind(this));
+    }
+}
