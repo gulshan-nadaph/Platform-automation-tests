@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AllTestsSuite">
+    <test name="test">
+        <classes>
+            <class name="TestWithExtentReport" />
+            <class name="SchemaValidationTest" />
+            <class name="SimpleGetTest" />
+        </classes>
+
+    </test>
+    <listeners>
+        <listener class-name="Listner.TestListener" />
+    </listeners>
+</suite>
