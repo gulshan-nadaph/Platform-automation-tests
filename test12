@@ -1,7 +1,0 @@
-import WebSocketClient from './WebSocketClient.js';
-
-class test12 {
-    constructor() {
-        let client = new WebSocketClient("iiot.bentley.com", 4201, "YourAPIKey");
-    }
-}
