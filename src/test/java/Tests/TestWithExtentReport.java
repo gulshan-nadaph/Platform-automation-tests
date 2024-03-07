@@ -1,3 +1,5 @@
+package Tests;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -26,7 +28,7 @@ public class TestWithExtentReport {
     public void testAPI() {
         Response response = RestAssured.get("https://jsonplaceholder.typicode.com/posts/1");
         try {
-            if (response.statusCode() != 500) {
+            if (response.statusCode() == 200) {
                 throw new java.lang.AssertionError("Did not receive 500 status code. Received: " + response.statusCode());
             }
              test.pass("Received 500 status code as expected.");

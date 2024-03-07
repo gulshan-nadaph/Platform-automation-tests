@@ -1,3 +1,5 @@
+package Tests;
+
 import com.aventstack.extentreports.ExtentReports;
 import io.restassured.RestAssured;
 import org.testng.annotations.AfterMethod;

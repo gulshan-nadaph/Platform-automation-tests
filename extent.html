@@ -52,7 +52,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Feb 22, 2024 09:05:24 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Mar 6, 2024 09:07:28 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -68,7 +68,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -111,10 +110,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>2</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -132,60 +131,17 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>testAPI</span>
-						<span class='test-time'>Feb 22, 2024 09:05:24 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Feb 22, 2024 09:05:24 PM</span>
-	<span class='label end-time'>Feb 22, 2024 09:05:26 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+687ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>9:05:26 PM</td>
-				<td class='step-details'>
-						TEST CASE FAILED IS testAPI
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>9:05:26 PM</td>
-				<td class='step-details'>
-						TEST CASE FAILED IS java.lang.AssertionError: Did not receive 500 status code. Received: 200
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>validateSchema</span>
-						<span class='test-time'>Feb 22, 2024 09:05:26 PM</span>
+						<span class='test-name'>testPostAlert</span>
+						<span class='test-time'>Mar 6, 2024 09:07:28 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 22, 2024 09:05:26 PM</span>
-	<span class='label end-time'>Feb 22, 2024 09:05:27 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+976ms</span>
+	<span class='label start-time'>Mar 6, 2024 09:07:28 PM</span>
+	<span class='label end-time'>Mar 6, 2024 09:07:34 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+846ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -199,44 +155,9 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>9:05:27 PM</td>
+				<td class='timestamp'>9:07:34 PM</td>
 				<td class='step-details'>
-						Test Case PASSED IS validateSchema
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
-					<div class='test-heading'>
-						<span class='test-name'>makeSureThatAPIIsUp</span>
-						<span class='test-time'>Feb 22, 2024 09:05:27 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Feb 22, 2024 09:05:27 PM</span>
-	<span class='label end-time'>Feb 22, 2024 09:05:28 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+489ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>9:05:28 PM</td>
-				<td class='step-details'>
-						Test Case PASSED IS makeSureThatAPIIsUp
+						Test Case PASSED IS testPostAlert
 					
 				</td>
 			</tr>
@@ -273,7 +194,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -285,19 +206,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 22, 2024 09:05:24 PM</div>
+					<div class='panel-lead'>Mar 6, 2024 09:07:28 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 22, 2024 09:05:28 PM</div>
+			 		<div class='panel-lead'>Mar 6, 2024 09:07:34 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 4s+563ms</div>
+					<div class='panel-lead'>0h 0m 5s+878ms</div>
 				</div>
 			</div>
 		</div>
@@ -308,14 +229,14 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 3,
-				passParent: 2,
-				failParent: 1,
+                parentCount: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -340,7 +261,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "testAPI":2.687,"validateSchema":0.976,"makeSureThatAPIIsUp":0.489
+			        "testPostAlert":5.846
 			};
 		</script>
 	
