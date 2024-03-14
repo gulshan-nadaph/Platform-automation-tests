@@ -1,12 +1,18 @@
 package Tests;
 
 
-import AlertCrud.DeleteAlert;
-import AlertCrud.PatchAlert;
-import AlertCrud.PostAlert;
+
+import AlertCRUD.DeleteAlert;
+import AlertCRUD.PatchAlert;
+import AlertCRUD.PostAlert;
 import Utility.BaseTest;
-import org.testng.annotations.Test;
+import Utility.getSMAccessToken;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import io.restassured.RestAssured;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 
 public class CrudAlert extends BaseTest {

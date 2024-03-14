@@ -1,4 +1,4 @@
-package AlertCrud;
+package AlertCRUD;
 
 
 import io.restassured.path.json.JsonPath;

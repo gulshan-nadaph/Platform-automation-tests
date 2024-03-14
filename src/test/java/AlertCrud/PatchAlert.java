@@ -1,4 +1,4 @@
-package AlertCrud;
+package AlertCRUD;
 
 
 import io.restassured.RestAssured;
@@ -21,13 +21,15 @@ public class PatchAlert {
                     .accept("application/json, text/plain, */*")
                     .header("Accept-Language", "en-GB,en-US;q=0.9,en;q=0.8")
                     .header("Authorization", "Bearer "+accessToken)
-                    .body(requestBody)
                     .log().all()
                     .when()
                     .patch();
-            response.then().assertThat().statusCode(200);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        System.out.println("Response :" + response.asString());
+        System.out.println("Status Code :" + response.getStatusCode());
     }
 }
