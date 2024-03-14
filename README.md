@@ -17,7 +17,7 @@ This repository contains test classes for testing API endpoints using RestAssure
 
 This project uses Maven as its build tool and for dependency management. You can run the tests using the Maven command `mvn test`.
 
-To build the project, use the command `mvn clean install`. This will also run the tests.
+To build the project, use the command `mvn clean install`. This command will also run the tests.
 
 ## Running Tests
 
