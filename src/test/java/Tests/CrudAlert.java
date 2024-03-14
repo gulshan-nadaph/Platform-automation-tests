@@ -1,15 +1,10 @@
 package Tests;
 
 
-import AlertCRUD.DeleteAlert;
-import AlertCRUD.PatchAlert;
-import AlertCRUD.PostAlert;
+import AlertCrud.DeleteAlert;
+import AlertCrud.PatchAlert;
+import AlertCrud.PostAlert;
 import Utility.BaseTest;
-import Utility.getSMAccessToken;
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import io.restassured.RestAssured;
 import org.testng.annotations.Test;
 import org.testng.annotations.Parameters;
 

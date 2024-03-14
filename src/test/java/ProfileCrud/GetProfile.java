@@ -22,13 +22,18 @@ public class GetProfile extends BaseTest {
                 .when()
                 .get("/api/profiles?type=dashboardView&projectIds=" + projectId)
                 .then()
-                .assertThat()
-                .statusCode(200)
-                .contentType(ContentType.JSON)
-                .body(matchesJsonSchemaInClasspath("getProfile.json"))
                 .extract()
                 .response();
 
-        System.out.println(response.asString());
+// Print the status code and the body of the response
+        System.out.println("Status code: " + response.statusCode());
+        System.out.println("Response body: " + response.body().asString());
+
+// Then do the assertions
+        response.then()
+                .assertThat()
+                .statusCode(200)
+                .contentType(ContentType.JSON)
+                .body(matchesJsonSchemaInClasspath("getProfile.json"));
     }
 }

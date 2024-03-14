@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "sensorCount": { "type": "integer" },
+          "userCount": { "type": "integer" },
+          "defaultProject": { "type": "boolean" },
+          "props": {
+            "type": "object",
+            "properties": {
+              "MAX_AMTS_SENSORS": { "type": "integer" },
+              "MAX_ARRAY_SENSORS": { "type": "integer" },
+              "MAX_COMPLIMENTARY_SENSORS": { "type": "integer" },
+              "ACCESSIBLE": { "type": "boolean" },
+              "CREATED_BY": { "type": "string" },
+              "CREATION_DATE": { "type": "string", "format": "date-time" },
+              "SUSPENDED": { "type": "boolean" },
+              "MAX_COMPOUND_SENSORS": { "type": "integer" },
+              "MAX_GPS": { "type": "integer" },
+              "ITWIN_ID": { "type": "string" },
+              "VISIBILITY": { "type": "string" },
+              "MAX_MANUAL_INCLINOMETER": { "type": "integer" },
+              "LAST_MODIFIED_BY": { "type": "string" },
+              "MAX_IMAGE": { "type": "integer" },
+              "NAME": { "type": "string" },
+              "ORGANIZATION_ID": { "type": "string" },
+              "MAX_VARIABLE": { "type": "integer" },
+              "MODULES": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "MAX_HIGHSPEED_SENSORS": { "type": "integer" },
+              "MAX_DISCRETE_SENSORS": { "type": "integer" },
+              "ASSOC_AUTH_IDS": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "LAST_MODIFIED_DATE": { "type": "string", "format": "date-time" },
+              "MAX_MANUAL_PRISM": { "type": "integer" }
+            },
+            "required": [
+              "MAX_AMTS_SENSORS",
+              "MAX_ARRAY_SENSORS",
+              "MAX_COMPLIMENTARY_SENSORS",
+              "ACCESSIBLE",
+              "CREATED_BY",
+              "CREATION_DATE",
+              "SUSPENDED",
+              "MAX_COMPOUND_SENSORS",
+              "MAX_GPS",
+              "ITWIN_ID",
+              "VISIBILITY",
+              "MAX_MANUAL_INCLINOMETER",
+              "LAST_MODIFIED_BY",
+              "MAX_IMAGE",
+              "NAME",
+              "ORGANIZATION_ID",
+              "MAX_VARIABLE",
+              "MODULES",
+              "MAX_HIGHSPEED_SENSORS",
+              "MAX_DISCRETE_SENSORS",
+              "ASSOC_AUTH_IDS",
+              "LAST_MODIFIED_DATE",
+              "MAX_MANUAL_PRISM"
+            ]
+          },
+          "customProps": { "type": "object" },
+          "orgName": { "type": "string" }
+        },
+        "required": [
+          "id",
+          "sensorCount",
+          "userCount",
+          "defaultProject",
+          "props",
+          "customProps",
+          "orgName"
+        ]
+      }
+    }
+  },
+  "required": ["projects"]
+}

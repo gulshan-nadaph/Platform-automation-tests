@@ -10,9 +10,6 @@ public class CrudProfile extends BaseTest {
     @Parameters("projectId")
     @Test
     public void testGetProfile(String projectId) {
-        PostAlert alertPoster = new PostAlert();
-        alertPoster.PostAlert(projectId, accessToken);
-        String alertId = alertPoster.getAlertId();
         GetProfile getProfile = new GetProfile();
         getProfile.testProfileGetter(projectId, accessToken);
 
