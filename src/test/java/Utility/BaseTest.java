@@ -4,6 +4,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import io.restassured.RestAssured;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 public class BaseTest {
@@ -17,7 +18,7 @@ public class BaseTest {
     protected int threshold;
     protected String alertType;
 
-    @BeforeSuite
+    @BeforeMethod
     public void setup() {
         extent = new ExtentReports();
         ExtentSparkReporter spark = new ExtentSparkReporter("target/Spark/Spark.html");

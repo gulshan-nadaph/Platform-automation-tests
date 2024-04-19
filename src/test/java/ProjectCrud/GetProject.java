@@ -1,10 +1,15 @@
 package ProjectCrud;
 
-
 import Utility.BaseTest;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import io.restassured.config.HttpClientConfig;
+
+import java.io.PrintWriter;
+import java.io.IOException;
+
+import org.apache.http.params.CoreConnectionPNames;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
@@ -12,6 +17,8 @@ public class GetProject  {
 
     public void getProjects(String orgId, String accessToken){
         String url = "https://dev-iiot.bentley.com/api/projects?orgId="+ orgId;
+
+        RestAssured.config = RestAssured.config().httpClient(HttpClientConfig.httpClientConfig().setParam(CoreConnectionPNames.CONNECTION_TIMEOUT, 10000).setParam(CoreConnectionPNames.SO_TIMEOUT, 10000));
 
         Response response = RestAssured.given()
                 .header("Accept", ContentType.JSON)
@@ -27,17 +34,24 @@ public class GetProject  {
                 .extract()
                 .response();
 
-        // Print the response or do something with it
-        System.out.println(response.prettyPrint());
-        // Print only the status code and headers
-        System.out.println("Status code: " + response.getStatusCode());
-        System.out.println("Headers: " + response.getHeaders());
+        // Write the response to a file
+        try {
+            PrintWriter writer = new PrintWriter("output.txt", "UTF-8");
+            writer.println(response.prettyPrint());
+            writer.println("Status code: " + response.getStatusCode());
+            writer.println("Headers: " + response.getHeaders());
 
-        // Print only the first 1000 characters of the body
-        String body = response.getBody().asString();
-        if (body.length() > 1000) {
-            body = body.substring(0, 1000);
+            // Write the first 100 lines of the body
+            String body = response.getBody().asString();
+            String[] lines = body.split("\n");
+            for (int i = 0; i < lines.length && i < 100; i++) {
+                writer.println(lines[i]);
+            }
+
+            writer.close();
+        } catch (IOException e) {
+            System.out.println("An error occurred while writing to the file.");
+            e.printStackTrace();
         }
-        System.out.println("Body: " + body);
     }
 }

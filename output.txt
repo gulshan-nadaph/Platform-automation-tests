@@ -1,0 +1,21 @@
+{
+    "projects": [
+        
+    ]
+}
+Status code: 200
+Headers: Content-Security-Policy=default-src *  data: blob: filesystem: about: ws: wss: 'unsafe-inline' 'unsafe-eval' 'unsafe-dynamic'; script-src * data: blob: 'unsafe-inline' 'unsafe-eval'; connect-src * data: blob: 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src * data: blob: ; style-src * data: blob: 'unsafe-inline'; font-src * data: blob: 'unsafe-inline'; frame-ancestors 'self' https://*.bentley.com https://*.sensemetrics.com:* https://*.sensemetrics.engineering http://localhost:*;
+Strict-Transport-Security=max-age=31536000;includeSubDomains
+X-Frame-Options=SAMEORIGIN
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Access-Control-Allow-Headers=authorization,Authorization,Origin,Accept,host,connection,accept-encoding,accept,user-agent,Content-Type
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, PATCH, HEAD
+Content-Type=application/json
+Content-Length=15
+Date=Tue, 02 Apr 2024 12:37:20 GMT
+{
+    "projects": [
+        
+    ]
+}

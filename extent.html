@@ -11,23 +11,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset='utf-8' />
+	<meta charset='utf-8' /> 
 	<meta name='description' content='' />
 	<meta name='robots' content='noodp, noydir' />
 	<meta name='viewport' content='width=device-width, initial-scale=1' />
 	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
-
+	
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link href='https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/css/extent.css' type='text/css' rel='stylesheet' />
-
+	
 	<title>ExtentReports</title>
 
 	<style type='text/css'>
 		/* json-tree */
 		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
 	</style>
-
+	
 	<script type="text/javascript">
 		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
 		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
@@ -52,7 +52,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Mar 14, 2024 12:02:25 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Apr 2, 2024 06:07:08 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -111,10 +111,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>2</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -134,15 +134,15 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>testPostAlert</span>
-						<span class='test-time'>Mar 14, 2024 12:02:30 PM</span>
+						<span class='test-name'>testGetProject</span>
+						<span class='test-time'>Apr 2, 2024 06:07:13 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 14, 2024 12:02:30 PM</span>
-	<span class='label end-time'>Mar 14, 2024 12:02:36 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+695ms</span>
+	<span class='label start-time'>Apr 2, 2024 06:07:13 PM</span>
+	<span class='label end-time'>Apr 2, 2024 06:07:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+207ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -156,10 +156,10 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>12:02:36 PM</td>
+				<td class='timestamp'>6:07:22 PM</td>
 				<td class='step-details'>
-						Test Case PASSED IS testPostAlert
-
+						Test Case PASSED IS testGetProject
+					
 				</td>
 			</tr>
 		</tbody>
@@ -167,52 +167,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>testGetProfile</span>
-						<span class='test-time'>Mar 14, 2024 12:02:38 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Mar 14, 2024 12:02:38 PM</span>
-	<span class='label end-time'>Mar 14, 2024 12:02:40 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+485ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>12:02:40 PM</td>
-				<td class='step-details'>
-						Test Case PASSED IS testGetProfile
-
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'>testGetProject</span>
-						<span class='test-time'>Mar 14, 2024 12:02:40 PM</span>
+						<span class='test-time'>Apr 2, 2024 06:07:24 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 14, 2024 12:02:40 PM</span>
-	<span class='label end-time'>Mar 14, 2024 12:02:41 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+521ms</span>
+	<span class='label start-time'>Apr 2, 2024 06:07:24 PM</span>
+	<span class='label end-time'>Apr 2, 2024 06:07:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+566ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -226,19 +191,19 @@
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>12:02:41 PM</td>
+				<td class='timestamp'>6:07:26 PM</td>
 				<td class='step-details'>
-						TEST CASE FAILED IS testGetProject
-
+						TEST CASE FAILED IS testGetProfile
+					
 				</td>
 			</tr>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>12:02:41 PM</td>
+				<td class='timestamp'>6:07:26 PM</td>
 				<td class='step-details'>
 						TEST CASE FAILED IS java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <401>.
-
+Expected status code <500> but was <200>.
+					
 				</td>
 			</tr>
 		</tbody>
@@ -274,7 +239,7 @@ Expected status code <200> but was <401>.
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -286,19 +251,19 @@ Expected status code <200> but was <401>.
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 14, 2024 12:02:25 PM</div>
+					<div class='panel-lead'>Apr 2, 2024 06:07:08 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 14, 2024 12:02:41 PM</div>
+			 		<div class='panel-lead'>Apr 2, 2024 06:07:26 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 16s+97ms</div>
+					<div class='panel-lead'>0h 0m 18s+39ms</div>
 				</div>
 			</div>
 		</div>
@@ -309,8 +274,8 @@ Expected status code <200> but was <401>.
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 3,
-				passParent: 2,
+                parentCount: 2,
+				passParent: 1,
 				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
@@ -341,10 +306,10 @@ Expected status code <200> but was <401>.
 		</script>
 		<script>
 			var timeline = {
-			        "testPostAlert":5.695,"testGetProfile":1.485,"testGetProject":1.521
+			        "testGetProject":9.207,"testGetProfile":1.566
 			};
 		</script>
-
+	
 		  <script src='https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/js/extent.js' type='text/javascript'></script>
 		<script type='text/javascript'>
 		</script>

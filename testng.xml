@@ -1,12 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="AllTestsSuite">
     <test name="test">
-        <parameter name="projectId" value="eb588b65-36a0-4cc5-b765-17cd31f04042"/>
+        <parameter name="projectId" value="b327f445-15d2-4e7b-b3ee-35cf0e046c59"/>
         <parameter name="orgId" value="62A9C8CE93266458902FFF48"/>
         <classes>
-            <class name="Tests.CrudAlert" />
-            <class name="Tests.CrudProfile" />
             <class name="Tests.CrudProject" />
+            <class name="Tests.CrudProfile" />
         </classes>
     </test>
     <listeners>

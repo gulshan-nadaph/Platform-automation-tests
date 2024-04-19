@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "props": {
+      "type": "object",
+      "properties": {
+        "MAX_GPS": {"type": "integer"},
+        "CREATED_BY": {"type": "string"},
+        "LAST_MODIFIED_BY": {"type": "string"},
+        "MAX_AMTS_SENSORS": {"type": "integer"},
+        "MAX_ARRAY_SENSORS": {"type": "integer"},
+        "ASSOC_AUTH_IDS": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "CREATION_DATE": {"type": "string", "format": "date-time"},
+        "ITWIN_ID": {"type": "string"},
+        "LAST_MODIFIED_DATE": {"type": "string", "format": "date-time"},
+        "MAX_IMAGE": {"type": "integer"},
+        "MAX_HIGHSPEED_SENSORS": {"type": "integer"},
+        "MAX_COMPLIMENTARY_SENSORS": {"type": "integer"},
+        "NAME": {"type": "string"},
+        "ORGANIZATION_ID": {"type": "string"},
+        "MAX_DISCRETE_SENSORS": {"type": "integer"},
+        "VISIBILITY": {"type": "string"},
+        "MODULES": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "SUSPENDED": {"type": "boolean"},
+        "ACCESSIBLE": {"type": "boolean"},
+        "ULAS_BILLING_ENABLED": {"type": "boolean"},
+        "MAX_MANUAL_PRISM": {"type": "integer"},
+        "MAX_VARIABLE": {"type": "integer"},
+        "MAX_MANUAL_INCLINOMETER": {"type": "integer"},
+        "MAX_COMPOUND_SENSORS": {"type": "integer"}
+      },
+      "required": [
+        "MAX_GPS",
+        "CREATED_BY",
+        "LAST_MODIFIED_BY",
+        "MAX_AMTS_SENSORS",
+        "MAX_ARRAY_SENSORS",
+        "ASSOC_AUTH_IDS",
+        "CREATION_DATE",
+        "ITWIN_ID",
+        "LAST_MODIFIED_DATE",
+        "MAX_IMAGE",
+        "MAX_HIGHSPEED_SENSORS",
+        "MAX_COMPLIMENTARY_SENSORS",
+        "NAME",
+        "ORGANIZATION_ID",
+        "MAX_DISCRETE_SENSORS",
+        "VISIBILITY",
+        "MODULES",
+        "SUSPENDED",
+        "ACCESSIBLE",
+        "ULAS_BILLING_ENABLED",
+        "MAX_MANUAL_PRISM",
+        "MAX_VARIABLE",
+        "MAX_MANUAL_INCLINOMETER",
+        "MAX_COMPOUND_SENSORS"
+      ]
+    },
+    "id": {"type": "string"},
+    "sensorCount": {"type": "integer"},
+    "userCount": {"type": "integer"},
+    "defaultProject": {"type": "boolean"}
+  },
+  "required": ["props", "id", "sensorCount", "userCount", "defaultProject"]
+}
